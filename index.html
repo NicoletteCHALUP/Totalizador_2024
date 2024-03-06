@@ -1,4 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Totalizador</title>
+</head>
   <body>
     <h1>Totalizador</h1>
     <form id="totalizador-form">
@@ -13,8 +20,14 @@
       </div>
       <br>
       <div>
-        <label for="estado">Codigo de Estado:</label>
-        <input type="text" id="estado" />
+        <label for="estado">Seleccionar Estado:</label>
+        <select id="estado">
+          <option value="UT">UT</option>
+          <option value="NV">NV</option>
+          <option value="TX">TX</option>
+          <option value="AL">AL</option>
+          <option value="CA" selected>CA</option>
+        </select>
       </div>
       <br>
       <input type="submit" value="totalizador" id="totalizador-button" />
